@@ -20,7 +20,7 @@ WORKDIR /root
 EXPOSE 53/udp
 
 # Start Unbound
-CMD ["/bin/sh", "-c", "unbound-checkconf && exec unbound -d -c /etc/unbound/unbound.conf -vvv"]
+CMD ["/bin/sh", "-c", "unbound-checkconf && exec unbound -d -c /etc/unbound/unbound.conf -v"]
 
 #CMD ["bash"]
 

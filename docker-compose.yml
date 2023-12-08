@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  unbound-dns:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    network_mode: host
+#    volumes:
+#    depends_on:
